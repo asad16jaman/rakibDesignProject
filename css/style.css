@@ -1,6 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #6244C5;
+    --primary-1: #6244C5;
+    --primary: #500eb0;
     --secondary: #FFC448;
     --light: #FAFAFB;
     --dark: #12141D;
@@ -77,6 +78,41 @@
     font-weight: normal;
 }
 
+/*** user signup modal start***/
+.custom-width{
+    width: 88%;
+    display: inline;
+    margin-right: 3px;
+    background: #0000001a;
+    border: none;
+    padding: 12px;
+}
+
+.d-inln{
+    display: block;
+}
+.brdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brdiv span{
+    width: 40%;
+    height: 1px;
+    background-color: #00000042;
+}
+.brdiv button{
+    background-color: #fff;
+    border: navajowhite;
+    padding: 14px 4px;
+}
+.formIcon{
+    width: 10%;
+     margin-bottom: 3px;
+     padding: 12px;
+}
+/*** user signup modal end***/
+
 
 /*** Navbar ***/
 .navbar.fixed-top {
@@ -109,6 +145,87 @@
     margin-bottom: 6rem;
     background: url(../img/bg-header.png) left top no-repeat;
 }
+.homeService img{
+    width: 100px;
+}
+.home-main{
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+
+.home-main .home-left{
+    width: 50%;
+}
+
+.home-left .home-welcome{
+    margin: 145px 0px 0px 170px;
+}
+
+.home-main .home-left .home-app{
+    display: flex;
+    padding: 35px 0px 170px 30px;
+}
+.noticText{
+    font-size: 1.7rem;
+}
+.home-main .home-left .home-app h3{
+    color: red;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.home-main .home-left .home-app img{
+    width: 48%;
+}
+.myimg{
+    width: 50%;
+}
+.video{
+    width: 50%;
+  display: flex;
+
+  align-items: end;
+  padding-left: 40px;
+}
+.home-main .home-right{
+    width: 50%;
+}
+.plybtn{
+   padding: 0px 0px 21px;
+}
+
+.signupBtn{
+    position: absolute;
+    right: 6%;
+    top: 10%;
+}
+
+@media (max-width: 991.98px) {
+    .home-main{
+        width: 100%;
+        height: auto;
+        display: block;
+    
+    }
+    
+    .home-main .home-left{
+        width: 100%;
+        overflow: hidden;
+       
+    }
+
+
+    .home-main .home-right{
+        width: 100%;
+        background-color: gray;
+        overflow: hidden;
+    }
+
+   
+}
+
+
 
 .typed-cursor {
     font-size: 30px;
